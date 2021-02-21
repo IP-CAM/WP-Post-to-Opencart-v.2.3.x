@@ -1,34 +1,34 @@
-Плагин **Post To OpenCart** предназначен для публикации постов из WordPress в OpenCart 2.3.x.
+The ** Post To OpenCart ** plugin is designed to publish posts from WordPress to OpenCart 2.3.x.
 
-После установки и активации плагина на странице "Настройки > Post To OpenCart":
+After installing and activating the plugin on the "Settings> Post To OpenCart" page:
 
-* Установить адрес сайта в поле **OpenCart URL**
-* Установить ключ в поле **OpenCart API Key**. 
+* Set site address in ** OpenCart URL ** field
+* Set the key in the ** OpenCart API Key ** field.
 
-![screenshot-1.png](screenshot-1.png)
+! [screenshot-1.png] (screenshot-1.png)
 
-Ключ API можно найти в админ панели OpenCart на странице "Система > Пользователи > API".
+The API key can be found in the OpenCart admin panel on the System> Users> API page.
 
-Для работы плагина необходимо добавить дополнительное поле в редактор постов. Для этого установить плагин **Advanced Custom Fields** и настроить дополнительное поле:
+For the plugin to work, you need to add an additional field to the post editor. To do this, install the ** Advanced Custom Fields ** plugin and configure an additional field:
 
-* тип записи - post
-* ярлык поля - Публиковать в ленте новостей
-* имя поля - push_to
-* выборы -
-```
-no : Нет
-yes : Да
-```
-![screenshot-2.png](screenshot-2.png)
-
-
-После этого в редакторе постов появляется поле "Публиковать в ленте новостей". Выбрав опцию **Да** и нажав кнопку **Публиковать** (**Обновить**) происходит сохранение текущего поста на сайт OpenCart:
-
-![screenshot-3.png](screenshot-3.png)
+* post type - post
+* field label - Publish to news feed
+* field name - push_to
+* elections -
+``,
+no: No
+yes: Yes
+``,
+! [screenshot-2.png] (screenshot-2.png)
 
 
-## Настройки OpenCart
+After that, the "Publish to news feed" field appears in the post editor. By selecting the ** Yes ** option and clicking the ** Publish ** (** Update **) button, the current post is saved to the OpenCart website:
 
-В админ панели OpenCart необходимо разрешить доступ к API с сайта новостей. Лента новостей может принимать и сохранять посты от нескольких разных сайтов. Для этого на странице "Система > Пользователи > API" добавить новый ключ API для каждого источника (доменного имени). Во вкладке **IP адрес** добавить реальный IP адрес новостного сайта:
+! [screenshot-3.png] (screenshot-3.png)
 
-![screenshot-4.png](screenshot-4.png)
+
+## OpenCart Settings
+
+In the admin panel of OpenCart, you need to allow access to the API from the news site. The news feed can accept and save posts from several different sites. To do this, on the "System> Users> API" page, add a new API key for each source (domain name). In the ** IP address ** tab add the real IP address of the news site:
+
+! [screenshot-4.png] (screenshot-4.png) 
